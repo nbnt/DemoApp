@@ -5,13 +5,20 @@ gem 'rails', '3.2.10'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
+group :development, :test do
   gem 'mysql2'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '1.1.2'
+  gem 'rb-fchange', '0.0.5'
+  gem 'rb-notifu', '0.0.4'
+  gem 'win32console', '1.3.0'
+  gem 'wdm'
 end
 
 group :production do
