@@ -3,12 +3,12 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'mysql2'
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-spork', '1.2.0'
@@ -28,9 +28,6 @@ group :test do
   gem 'factory_girl_rails'
 end
 
-group :production do
-  gem 'pg'
-end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
